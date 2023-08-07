@@ -1,0 +1,9 @@
+<h2>Message List</h2>
+
+<ul>
+  <li *ngFor="let message of messages">
+    <span>{{ message.text }}</span>
+    <button (click)="editMessage(message.id)">Edit</button>
+    <button (click)="deleteMessage(message.id)">Delete</button>
+  </li>
+</ul>
